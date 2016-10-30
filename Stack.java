@@ -36,4 +36,11 @@ public int size() {
  return count;
 }
 
+public String peek() {
+ if (headNode == null)
+  return null;
+  return headNode.getInfo();
+ }
+
+
 
