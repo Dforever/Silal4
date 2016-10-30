@@ -53,3 +53,15 @@ public void push(String item) {
 
 }
 
+public String pop() {
+  if (headNode == null) {
+   return null;
+  } else {
+   String curr = headNode.getInfo();
+   headNode = headNode.getTail();
+   return curr;
+
+  }
+}
+
+}
