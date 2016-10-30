@@ -42,5 +42,14 @@ public String peek() {
   return headNode.getInfo();
  }
 
+public void push(String item) {
+ ListNode newNode = new ListNode(item);
+ if (headNode == null) {
+  headNode = newNode;
+ } else {
+  newNode.setTail(headNode);
+  headNode = newNode;
+ }
 
+}
 
