@@ -44,6 +44,16 @@ public String peek() {
   return headNode.getInfo();
  }
 
+public void enqueue(String item) {
+ ListNode newNode = new ListNode(item);
+ if (headNode == null) {
+  headNode = newNode;
+  tailNode = newNode;
+ } else {
+  tailNode.setTail(newNode);
+  tailNode = newNode;
+ }
 
+}
 
 }
