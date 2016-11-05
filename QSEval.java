@@ -113,3 +113,24 @@ public static void EvalQueueStack() {
 				ReverseStack(st1, st2);
 				StPop(st2);
 			}
+
+			public static void EvalStackStack() {
+							Stack st2 = new Stack();
+							Stack st = new Stack();
+									st.push("mouse");
+									st.push("keyboard");
+									st.push("tower");
+									st.push("moniter");
+									st.push("printer");
+									st.push("flash drive");
+									st.push("mic");
+									st.push("earbud");
+									st.print();
+							ReverseStack(st, st2);
+							ReverseStack(st2, st);
+							st.print();
+
+
+
+					}
+}
