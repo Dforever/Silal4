@@ -60,3 +60,33 @@ public static void DeQ(MyQueue qu) {
 	}
 	System.out.println("");
 }
+
+public static void ReverseStack(Stack st1, Stack st2) {
+	String data = "";
+	while ((data = st1.pop()) !=null) {
+		st2.push(data);
+	}
+}
+
+public static void EvalStackQueue() {
+	Stack st2 = new Stack();
+	MyQueue qu2 = new MyQueue();
+	Stack st = new Stack();
+			st.push("mouse");
+			st.push("keyboard");
+			st.push("tower");
+			st.push("moniter");
+			st.push("printer");
+			st.push("flash drive");
+			st.push("mic");
+			st.push("earbud");
+			st.print();
+
+
+			String data = "";
+			while ((data = st.pop()) != null) {
+				qu2.enqueue(data);
+			}
+
+			DeQ(qu2);
+		}
