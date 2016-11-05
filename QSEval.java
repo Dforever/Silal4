@@ -37,3 +37,26 @@ public class QSEval {
 	System.out.println("");
 }
 
+public static void EvalQueue() {
+	MyQueue qu = new MyQueue();
+	qu.enqueue("mouse");
+	qu.enqueue("keyboard");
+	qu.enqueue("tower");
+	qu.enqueue("moniter");
+	qu.enqueue("printer");
+	qu.enqueue("flash drive");
+	qu.enqueue("mic");
+	qu.enqueue("earbud");
+	qu.print();
+	DeQ(qu);
+}
+
+public static void DeQ(MyQueue qu) {
+	while (qu.peek() != null) {
+		System.out.print(qu.dequeue());
+		if (qu.peek() != null) {
+			System.out.print(" = ");
+		}
+	}
+	System.out.println("");
+}
