@@ -90,3 +90,26 @@ public static void EvalStackQueue() {
 
 			DeQ(qu2);
 		}
+
+public static void EvalQueueStack() {
+			Stack st1 = new Stack();
+			Stack st2 = new Stack();
+			MyQueue qu2 = new MyQueue();
+			MyQueue qu = new MyQueue();
+				qu.enqueue("mouse");
+				qu.enqueue("keyboard");
+				qu.enqueue("tower");
+				qu.enqueue("moniter");
+				qu.enqueue("printer");
+				qu.enqueue("flash drive");
+				qu.enqueue("mic");
+				qu.enqueue("earbud");
+				qu.print();
+
+				String data = "";
+				while ((data = qu.dequeue()) != null) {
+					st1.push(data);
+				}
+				ReverseStack(st1, st2);
+				StPop(st2);
+			}
