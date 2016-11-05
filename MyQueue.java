@@ -56,4 +56,16 @@ public void enqueue(String item) {
 
 }
 
+public String dequeue() {
+  if (headNode == null) {
+   return null;
+  } else {
+   String curr = headNode.getInfo();
+   headNode = headNode.getTail();
+   if (headNode == null)
+   tailNode = null;
+   return curr;
+
+  }
+}
 }
